@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="The Original PizzaBox serves authentic, wood-fired, artisan pizzas from a converted horsebox. We are available to cater at all types of events.">
+  <meta name="author" content="Owner: M Fletcher,Develeoper: J Masters">
+  <title>The Original Pizza Box</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- fonts  -->
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <!-- Custom styles -->
+  <link href="css/master.css" rel="stylesheet">
+  <!--jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+  </script>
+  <script src="js/parallax.min.js"></script>
+  <script src="js/scroll.js"></script>
+</head>
+
+<body>
+  <!--nav new -->
+  <nav id="home" class="navbar navbar-expand-lg navbar bg-dark fixed-top">
+    <div class="container">
+      <a href="#home" class="">
+        <img src="img/logo.png" class="logo" alt="The Original Pizza Box logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="tempham">TEMP</span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ourpizza">Our Pizza</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#localspots">Local spots </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#events">Events</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#hireus">Hire Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <div class="parallax-window" data-parallax="scroll" data-z-index="-1" data-image-src="img/logsb.png">
+    <header class="masthead">
+      <div class="overlay">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+              <div class="site-heading">
+                <img src="img/logof.png" class="logomain">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-preview">
+          <h1 id="ourpizza" class="post-title">
+            Our Organic Ingredients
+          </h1>
+          <h3 class="post-subtitle">
+            Text about ingredients and a picture of ingredients
+          </h3>
+          <div class="text-center">
+            <img class="img-fluid" src="img/ing.jpg">
+          </div>
+          <hr>
+          <h1>Our Wood Fired Pizza </h1>
+          <h2>Margherita</h2>
+          <h3>Mozzarella, basil and baby plum tomatoes</h3>
+          <div class="text-center">
+            <img class="img-fluid" src="img/m.jpg">
+          </div>
+          <hr>
+          <h2>Capricciosa</h2>
+          <h3>Mozzarella, black olives, torchon ham and portobello mushrooms</h3>
+          <div class="text-center">
+            <img class="img-fluid" src="img/crudo.jpg">
+          </div>
+          <hr>
+
+          <h2>Diavolo</h2>
+          <h3> Mozzarella, Milano salami, spicy peppers and chilli flakes</h3>
+          <div class="text-center">
+            <img class="img-fluid" src="img/special.jpg">
+          </div>
+          <hr>
+
+          <h2>Giardino</h2>
+          <h3>Mozzarella,baby plum tomatoes, chargrilled peppers, portabello mushrooms, basil and black olives</h3>
+          <div class="text-center">
+            <img class="img-fluid" src="img/crudo.jpg">
+          </div>
+          <hr>
+
+          <h2>Chorizo Cipolla</h2>
+          <h3>Mozzarella, chorizo and red onion</h3>
+          <div class="text-center">
+            <img class="img-fluid" src="img/crudo.jpg">
+          </div>
+          <hr>
+          <h1>Specials</h1>
+          <h2>Nduja</h2>
+          <h3>Nduja (hot Italian sausage), red onion and grilled peppers. Time limited</h3>
+          <div class="text-center">
+            <img class="img-fluid" src="img/nduja.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <h2 id="localspots">Local Spots</h2>
+
+    <h3>Tuesday 5:30 - 8:30</h3>
+    <h3>At The Royal Oak, Crick</h3>
+
+    <h3>Wedenesday 5:30 - 8:30</h3>
+    <h3>Melbourne Arms, Duston</h3>
+
+    <h3>Thurday and Friday 5:30 - 8:30</h3>
+    <h3>At Foresters Arms, Nether Heyford</h3>
+
+
+    <div id="map">
+    </div>
+
+    <script>
+      $(document).foundation();
+
+      function initMap() {
+        var center = {
+          lat: 52.221202,
+          lng: -1.035484
+        };
+        var locations = [
+          ['The Royal Oak<br>\
+              22 Church St, Crick, Northampton NN6 7TP<br>\
+               <a href="https://goo.gl/maps/L8ETMBt7cRA2">Get Directions</a>', 52.349333, -1.138067],
+          ['The Melbourne Arms<br>\
+                9 Melbourne La, Northampton NN5 6HS<br>\
+               <a href="https://goo.gl/maps/PY1abQhuW9C2">Get Directions</a>', 52.242442, -0.944717],
+          ['Foresters Arms<br>\
+              22 The Green, Nether Heyford, Northampton NN7 3LE<br>\
+                <a href="https://goo.gl/maps/eUmyNuMyYNN2">Get Directions</a>', 52.221202, -1.035484]
+        ];
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 10,
+          center: center
+        });
+        var infowindow = new google.maps.InfoWindow({});
+        var marker, count;
+        for (count = 0; count < locations.length; count++) {
+          marker = new google.maps.Marker({
+            position: new google.maps.LatLng(locations[count][1], locations[count][2]),
+            map: map,
+            title: locations[count][0]
+          });
+          google.maps.event.addListener(marker, 'click', (function(marker, count) {
+            return function() {
+              infowindow.setContent(locations[count][0]);
+              infowindow.open(map, marker);
+            }
+          })(marker, count));
+        }
+      }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCM4XjnV8BXb3ydIKaEeplI2EkDIRNrUrE&callback=initMap">
+    </script>
+    <hr>
+  </div>
+  </div>
+  </div>
+
+
+
+
+  <!--Carousels -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <h2 id="events" class="post-title">
+          Past Events
+        </h2>
+        <h3 class="post-subtitle">
+          Fawsley Hall, Wedding
+        </h3>
+        <div id="imgcar" class="carousel slide carousel-fade" data-interval="2000" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#imgcar" data-slide-to="0" class="active"></li>
+            <li data-target="#imgcar" data-slide-to="1"></li>
+            <li data-target="#imgcar" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="img\fawsley.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img\fawsley2.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img\fawsley3.jpg" alt="Third slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" data-target="#imgcar" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" data-target="#imgcar" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <hr>
+
+
+        <h3 class="post-subtitle">
+          Festval example, Festival
+        </h3>
+        <div id="imgcar2" class="carousel slide carousel-fade" data-interval="2500" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#imgcar2" data-slide-to="0" class="active"></li>
+            <li data-target="#imgcar2" data-slide-to="1"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="img\festival1.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img\festival2.jpg" alt="Second slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" data-target="#imgcar2" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+          <a class="carousel-control-next" data-target="#imgcar2" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+        </div>
+        <hr>
+        <h3 class="post-subtitle">
+          Private events, garden parties
+        </h3>
+        <div id="imgcar3" class="carousel slide carousel-fade" data-interval="2200" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#imgcar3" data-slide-to="0" class="active"></li>
+            <li data-target="#imgcar3" data-slide-to="1"></li>
+            <li data-target="#imgcar3" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="img\garden1.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img\garden2.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img\garden3.jpg" alt="Third slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" data-target="#imgcar3" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+          <a class="carousel-control-next" data-target="#imgcar3" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <h2 id="hireus" class="post-title">
+          Hire US
+        </h2>
+        <h3 class="post-subtitle">
+          Could do a form or could just do your number here, Could make it so the form just emails you what people in put or saomthing need to talk to you to be honest
+        </h3>
+
+      </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <hr>
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-8 col-md-10 mx-auto">
+                      <h2 class="post-title">
+                        Social media
+                      </h2>
+                      <h3>
+                        Get In Contact
+                      </h3>
+                      <h3>Phone: 07850 435352</h3>
+                      <h3>Facbook Messenger: <a href="http://m.me/theoriginalpizzabox">TheOriginalPizzaBox</a> </h3>
+                      <h3>Email: <a href="mailto:marius.fletcher@gmail.com">marius.fletcher@gmail.com</a> </h3>
+                    </div>
+                  </div>
+              </li>
+              <li class="list-inline-item">
+                <a class="black" href="https://www.facebook.com/theoriginalpizzabox/">
+                  <img src="img\Black\FindUs-FB-RGB-Blk-1024.png" alt="find us on facebook black"class="face">
+                </a>
+
+                <a class="black" href="https://www.facebook.com/theoriginalpizzabox/">
+                  <img src="img\Color\FindUs-FB-RGB-1024.png" alt="find us on facebook blue " class="face">
+                </a>
+              </li>
+            </ul>
+            <p class="copyright text-muted">Copyright &copy; The Origal pizza box 2018</p>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/clean-blog.min.js"></script>
+    </div>
+</body>
+
+</html>
